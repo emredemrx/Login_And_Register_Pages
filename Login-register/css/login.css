@@ -1,0 +1,256 @@
+:root {
+  --buttonrenk:rgb(14, 14, 14);
+  --buttonWhitetext:white;
+  --fontSize:.8rem;
+  --titleFont:1.5rem;
+  --buttonBlackButtonColor:rgb(0, 0, 0);
+  --buttonWhiteHoverButton:white;
+  --buttonWriteButtonColor:rgb(255, 255, 255);
+  --buttonBlackHoverButton:rgb(0, 0, 0);
+  --buttonWhiteText:white;
+  --buttonBlackText:rgb(0, 0, 0);
+  --buttonblackHoverText:rgb(0, 0, 0);
+  --buttonYellowHoverText:rgb(255, 175, 27);
+  --buttonHoverButton:rgb(2, 163, 43);
+  --buttonRedHoverButton:rgb(189, 3, 3); }
+
+body {
+  background-image: url("../image/arka.jpg");
+  backdrop-filter: blur(3px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none; }
+
+.login-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.363); }
+  .login-background .loginArea {
+    padding: 20px;
+    position: relative;
+    min-width: 350px;
+    min-height: 550px;
+    background-color: rgba(27, 27, 27, 0.781);
+    border-radius: 15px;
+    z-index: 1;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    text-align: center; }
+    .login-background .loginArea .loginTencere {
+      height: 100px;
+      margin-top: -75px; }
+    .login-background .loginArea .logintitle {
+      font-size: var(--titleFont);
+      color: var(--buttonWhiteText);
+      margin: 15px 0; }
+    .login-background .loginArea .login {
+      display: flex;
+      flex-direction: column; }
+      .login-background .loginArea .login #customBtn {
+        display: inline-block;
+        background-color: var(--buttonBlackButtonColor);
+        color: white;
+        position: relative;
+        border-radius: 5px;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        transition: all 200ms; }
+        .login-background .loginArea .login #customBtn .icon {
+          background-image: url("/image/Google__G__Logo.png") transparent 5px 50% no-repeat;
+          display: inline-block;
+          vertical-align: middle;
+          width: 42px;
+          height: 42px;
+          display: flex;
+          padding-left: 10px;
+          align-items: center; }
+          .login-background .loginArea .login #customBtn .icon img {
+            height: 20px;
+            position: relative;
+            left: 0; }
+        .login-background .loginArea .login #customBtn .buttonText {
+          display: inline-block;
+          vertical-align: middle;
+          padding-left: 42px;
+          padding-right: 42px;
+          font-size: 14px;
+          font-weight: bold;
+          /* Use the Roboto font that is loaded in the <head> */
+          font-family: 'Roboto', sans-serif; }
+      .login-background .loginArea .login #customBtn:hover {
+        cursor: pointer;
+        background-color: var(--buttonWhiteHoverButton);
+        color: var(--buttonblackHoverText); }
+      .login-background .loginArea .login .or {
+        margin: 1rem 0;
+        text-align: center;
+        display: flex;
+        align-items: center; }
+        .login-background .loginArea .login .or .text {
+          color: rgba(255, 255, 255, 0.63);
+          padding: 0 20px;
+          font-size: .8rem; }
+        .login-background .loginArea .login .or .orborder {
+          height: 0.01rem;
+          flex: 1;
+          background: rgba(255, 255, 255, 0.63); }
+      .login-background .loginArea .login label {
+        color: white;
+        display: flex;
+        justify-content: start;
+        font-size: var(--fontSize);
+        margin: 5px 0; }
+      .login-background .loginArea .login .input {
+        position: relative;
+        margin-top: 10px; }
+        .login-background .loginArea .login .input .emailinput {
+          border-radius: 3px;
+          padding: 8px 30px 8px 8px;
+          background-color: rgba(58, 58, 58, 0.452);
+          color: var(--buttonWhitetext);
+          font-size: var(--fontSize);
+          width: 100%;
+          color: whitesmoke;
+          box-shadow: 2px 3px 5px rgba(8, 8, 8, 0.493); }
+        .login-background .loginArea .login .input .passwordinput {
+          border-radius: 3px;
+          padding: 8px 55px 8px 8px;
+          background-color: rgba(58, 58, 58, 0.452);
+          color: var(--buttonWhitetext);
+          font-size: var(--fontSize);
+          width: 100%;
+          color: whitesmoke;
+          box-shadow: 2px 3px 5px rgba(8, 8, 8, 0.493); }
+        .login-background .loginArea .login .input .inputicon {
+          position: absolute;
+          z-index: 1;
+          display: flex;
+          justify-content: end;
+          opacity: 0.5;
+          right: 10px;
+          top: calc(50% - 8px); }
+        .login-background .loginArea .login .input .inputpasswordicon {
+          color: white;
+          z-index: 1;
+          position: absolute;
+          opacity: 0.5;
+          right: 33px;
+          top: calc(50% - 8px); }
+      .login-background .loginArea .login .loginAreaFootter .loginButton {
+        margin: 20px 0;
+        padding: 5px;
+        width: 100%;
+        background-color: white;
+        transition: all 200ms;
+        outline: 0;
+        border: 0; }
+      .login-background .loginArea .login .loginAreaFootter .loginButton:hover {
+        background-color: var(--buttonYellowHoverText);
+        color: var(--buttonWhitetext); }
+      .login-background .loginArea .login .loginAreaFootter .registerButton {
+        margin: 20px 0;
+        padding: 5px;
+        width: 100%;
+        background-color: var(--buttonBlackButtonColor);
+        color: var(--buttonWhiteHoverButton);
+        transition: all 200ms;
+        outline: 0;
+        border: 0; }
+      .login-background .loginArea .login .loginAreaFootter .registerButton:hover {
+        background-color: var(--buttonWriteButtonColor);
+        color: var(--buttonBlackText); }
+      .login-background .loginArea .login .loginAreaFootter .passwordLine {
+        margin: 1rem 0;
+        text-align: center;
+        display: flex;
+        align-items: center; }
+        .login-background .loginArea .login .loginAreaFootter .passwordLine .text {
+          color: rgba(255, 255, 255, 0.63);
+          padding: 0 20px;
+          font-size: .8rem; }
+          .login-background .loginArea .login .loginAreaFootter .passwordLine .text a {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            color: var(--buttonWhiteText);
+            transition: all 200ms; }
+          .login-background .loginArea .login .loginAreaFootter .passwordLine .text a:hover {
+            color: var(--buttonYellowHoverText); }
+        .login-background .loginArea .login .loginAreaFootter .passwordLine .orborder {
+          height: 0.01rem;
+          flex: 1;
+          background: rgba(255, 255, 255, 0.63); }
+      .login-background .loginArea .login .loginAreaFootter span {
+        color: var(--buttonWhitetext);
+        font-size: .6rem;
+        opacity: 0.5; }
+      .login-background .loginArea .login .BusinessSelect {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem; }
+        .login-background .loginArea .login .BusinessSelect span {
+          color: var(--buttonWhitetext);
+          font-size: .8rem; }
+        .login-background .loginArea .login .BusinessSelect input[type="radio"].toggle {
+          display: inline-block;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          width: 40px;
+          height: 20px;
+          background-color: #fafafa;
+          position: relative;
+          -moz-border-radius: 30px;
+          -webkit-border-radius: 30px;
+          border-radius: 30px;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; }
+          .login-background .loginArea .login .BusinessSelect input[type="radio"].toggle:hover:after {
+            background-color: var(--buttonYellowHoverText); }
+          .login-background .loginArea .login .BusinessSelect input[type="radio"].toggle:after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color: #aeaeae;
+            top: 2px;
+            left: 2px;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out; }
+        .login-background .loginArea .login .BusinessSelect input[type="radio"]:checked.toggle {
+          -moz-box-shadow: inset 0 0 0 15px #158ec6;
+          -webkit-box-shadow: inset 0 0 0 15px #158ec6;
+          box-shadow: inset 0 0 0 15px var(--buttonYellowHoverText); }
+          .login-background .loginArea .login .BusinessSelect input[type="radio"]:checked.toggle:after {
+            left: 20px;
+            background-color: #fff; }
+  .login-background .loginArea:before {
+    background-image: url("/images/tencere.png"); }
+
+/*# sourceMappingURL=login.css.map */
